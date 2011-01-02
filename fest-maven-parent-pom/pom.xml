@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.easytesting</groupId>
   <artifactId>fest</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.3</version>
   <packaging>pom</packaging>
   <name>FEST: Fixtures for Easy Software Testing</name>
   <licenses>
@@ -82,7 +82,7 @@
       </roles>
     </developer>
     <developer>
-      <id>&nbsp;</id>
+      <id>&#32;</id>
       <name>Simeon Fitch</name>
       <url>http://www.mseedsoft.com/</url>
       <roles>
@@ -113,6 +113,13 @@
       </roles>
     </developer>
     <developer>
+      <id>plm31</id>
+      <name>Peter Murray</name>
+      <roles>
+        <role>Developer</role>
+      </roles>
+    </developer>
+    <developer>
       <id>rrakic</id>
       <name>Remy Rakic</name>
       <url>http://twitter.com/lqd</url>
@@ -137,337 +144,12 @@
       </roles>
     </developer>
   </developers>
-  <contributors>
-    <contributor>
-      <name>Andres Almiray</name>
-      <url>http://www.jroller.com/aalmiray/</url>
-    </contributor>
-    <contributor>
-      <name>Francis ANDRE</name>
-    </contributor>
-    <contributor>
-      <name>Martin Ankerl</name>
-    </contributor>
-    <contributor>
-      <name>Jeff Bay</name>
-      <url>http://www.xpteam.com/jeff/</url>
-    </contributor>
-    <contributor>
-      <name>Martin Bachmann</name>
-    </contributor>
-    <contributor>
-      <name>Fabien Barbero</name>
-    </contributor>
-    <contributor>
-      <name>Volker Berlin</name>
-    </contributor>
-    <contributor>
-      <name>Pavol Bernhauser</name>
-    </contributor>
-    <contributor>
-      <name>Cedric Beust</name>
-      <url>http://beust.com/weblog/</url>
-    </contributor>
-    <contributor>
-      <name>William Billingsley</name>
-    </contributor>
-    <contributor>
-      <name>Wim Boffe</name>
-    </contributor>
-    <contributor>
-      <name>Morten Breum Mikkelsen</name>
-    </contributor>
-    <contributor>
-      <name>Nicolae Bucalaete</name>
-    </contributor>
-    <contributor>
-      <name>Lalitha Chandra</name>
-    </contributor>
-    <contributor>
-      <name>Cephei</name>
-    </contributor>
-    <contributor>
-      <name>Ricky Clarkson</name>
-    </contributor>
-    <contributor>
-      <name>Stephen Colebourne</name>
-      <url>http://www.jroller.com/scolebourne/</url>
-    </contributor>
-    <contributor>
-      <name>Dario Consoli</name>
-    </contributor>
-    <contributor>
-      <name>Keith Coughtrey</name>
-    </contributor>
-    <contributor>
-      <name>Wim Deblauwe</name>
-      <url>http://www.jroller.com/page/Fester</url>
-      <organizationUrl>http://vigilog.sourceforge.net/</organizationUrl>
-    </contributor>
-    <contributor>
-      <name>Mark Derricutt</name>
-      <url>http://www.talios.com/</url>
-    </contributor>
-    <contributor>
-      <name>Christian Dahn</name>
-    </contributor>
-    <contributor>
-      <name>David DIDIER</name>
-    </contributor>
-    <contributor>
-      <name>Olivier DOREMIEUX</name>
-      <organizationUrl>http://www.newsoftwaremarketing.com/</organizationUrl>
-    </contributor>
-    <contributor>
-      <name>Brian Duff</name>
-      <url>http://blog.dubh.org/</url>
-    </contributor>
-    <contributor>
-      <name>Xavier Dury</name>
-    </contributor>
-    <contributor>
-      <name>Dan Dyer</name>
-    </contributor>
-    <contributor>
-      <name>Tony Eichelberger</name>
-    </contributor>
-    <contributor>
-      <name>Jacob Fahrenkrug</name>
-    </contributor>
-    <contributor>
-      <name>Steve Farrell</name>
-    </contributor>
-    <contributor>
-      <name>Woody Folsom</name>
-    </contributor>
-    <contributor>
-      <name>Stephen Gade Esven</name>
-    </contributor>
-    <contributor>
-      <name>Konrad Garus</name>
-    </contributor>
-    <contributor>
-      <name>Ken Geis</name>
-    </contributor>
-    <contributor>
-      <name>Timmo Gierke</name>
-    </contributor>
-    <contributor>
-      <name>Martin Ginkel</name>
-    </contributor>
-    <contributor>
-      <name>Jason Goodwin</name>
-    </contributor>
-    <contributor>
-      <name>Andy Glover</name>
-      <organization>Stelligent</organization>
-      <organizationUrl>http://www.stelligent.com/</organizationUrl>
-      <url>http://thediscoblog.com</url>
-    </contributor>
-    <contributor>
-      <name>Kirill Grouchnikov</name>
-      <url>http://www.pushing-pixels.org/</url>
-    </contributor>
-    <contributor>
-      <name>Slava Gurilev</name>
-    </contributor>
-    <contributor>
-      <name>Viktor Hedefalk</name>
-    </contributor>
-    <contributor>
-      <name>Henning</name>
-    </contributor>
-    <contributor>
-      <name>Leo Jay</name>
-    </contributor>
-    <contributor>
-      <name>Marc Johen</name>
-    </contributor>
-    <contributor>
-      <name>Gino John</name>
-    </contributor>
-    <contributor>
-      <name>Rick Juneson</name>
-    </contributor>
-    <contributor>
-      <name>Bernd Kappler</name>
-    </contributor>
-    <contributor>
-      <name>Julia Koep</name>
-    </contributor>
-    <contributor>
-      <name>Eric Kolotyluk</name>
-    </contributor>
-    <contributor>
-      <name>Manuel Kueblboeck</name>
-    </contributor>
-    <contributor>
-      <name>Harry L</name>
-    </contributor>
-    <contributor>
-      <name>Felipe Leme</name>
-    </contributor>
-    <contributor>
-      <name>Kwen K. Liu</name>
-    </contributor>
-    <contributor>
-      <name>Michel Lohr</name>
-    </contributor>
-    <contributor>
-      <name>Rahel L�thy</name>
-    </contributor>
-    <contributor>
-      <name>Ivan Malygin</name>
-    </contributor>
-    <contributor>
-      <name>Pavol Marko</name>
-    </contributor>
-    <contributor>
-      <name>Frederik Martens</name>
-    </contributor>
-    <contributor>
-      <name>Ewan McDougall</name>
-    </contributor>
-    <contributor>
-      <name>Ondrej Medek</name>
-    </contributor>
-    <contributor>
-      <name>Duncan Mills</name>
-      <organization>Oracle</organization>
-      <organizationUrl>http://www.oracle.com/</organizationUrl>
-      <url>http://www.groundside.com/blog/DuncanMills.php</url>
-    </contributor>
-    <contributor>
-      <name>Kyle Murphy</name>
-    </contributor>
-    <contributor>
-      <name>Stephen Neal</name>
-    </contributor>
-    <contributor>
-      <name>Viet Nguyen</name>
-    </contributor>
-    <contributor>
-      <name>Stanislaw Osinski</name>
-      <url>http://stanislaw.osinski.name/</url>
-    </contributor>
-    <contributor>
-      <name>Matthias Otterbach</name>
-    </contributor>
-    <contributor>
-      <name>Sergey Parilin</name>
-    </contributor>
-    <contributor>
-      <name>Dan Peder Eriksen</name>
-    </contributor>
-    <contributor>
-      <name>Alexander Potochkin</name>
-      <organization>Sun Microsystems</organization>
-      <organizationUrl>http://www.sun.com/</organizationUrl>
-      <url>http://weblogs.java.net/blog/alexfromsun/</url>
-    </contributor>
-    <contributor>
-      <name>Jacob Qvortrup</name>
-    </contributor>
-    <contributor>
-      <name>Javier Sandino</name>
-    </contributor>
-    <contributor>
-      <name>Mariusz Saternus</name>
-      <organization>IDR Solutions</organization>
-      <organizationUrl>http://www.idrsolutions.com/</organizationUrl>
-    </contributor>
-    <contributor>
-      <name>Konstantin Scheglov</name>
-    </contributor>
-    <contributor>
-      <name>Johannes Schneider</name>
-    </contributor>
-    <contributor>
-      <name>Michael Schnell</name>
-      <url>http://www.future-invent.de/</url>
-    </contributor>
-    <contributor>
-      <name>Glen Schrader</name>
-    </contributor>
-    <contributor>
-      <name>Uli Schrempp</name>
-    </contributor>
-    <contributor>
-      <name>Joel Shellman</name>
-    </contributor>
-    <contributor>
-      <name>Hayden Shorter</name>
-    </contributor>
-    <contributor>
-      <name>Lorenzo Sicilia</name>
-    </contributor>
-    <contributor>
-      <name>Marcos Silva Pereira</name>
-    </contributor>
-    <contributor>
-      <name>J. Simmons</name>
-    </contributor>
-    <contributor>
-      <name>Florian SIMON</name>
-    </contributor>
-    <contributor>
-      <name>Tarjei Skorgenes</name>
-    </contributor>
-    <contributor>
-      <name>John Stephi</name>
-    </contributor>
-    <contributor>
-      <name>Eitan Suez</name>
-      <url>http://weblogs.java.net/blog/eitan/</url>
-    </contributor>
-    <contributor>
-      <name>Daniel F. Surdyk, III</name>
-    </contributor>
-    <contributor>
-      <name>Jesper Thaning</name>
-    </contributor>
-    <contributor>
-      <name>Steve Tom</name>
-      <organization>Oracle</organization>
-      <organizationUrl>http://www.oracle.com/</organizationUrl>
-    </contributor>
-    <contributor>
-      <name>Rich Toulouse</name>
-    </contributor>
-    <contributor>
-      <name>Andriy Tsykholyas</name>
-    </contributor>
-    <contributor>
-      <name>Lukasz Tutaj</name>
-    </contributor>
-    <contributor>
-      <name>Mihael Vrbanec</name>
-    </contributor>
-    <contributor>
-      <name>Geertjan Wielenga</name>
-      <organization>Sun Microsystems</organization>
-      <organizationUrl>http://www.sun.com/</organizationUrl>
-      <url>http://blogs.sun.com/geertjan/</url>
-    </contributor>
-    <contributor>
-      <name>Dominik Wild</name>
-    </contributor>
-    <contributor>
-      <name>Jeanette Winzenburg</name>
-    </contributor>
-    <contributor>
-      <name>Geoffrey Wiseman</name>
-    </contributor>
-    <contributor>
-      <name>Jan Zuchhold</name>
-    </contributor>
-  </contributors>
   <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
-        <version>4.7</version>
+        <version>4.8.2</version>
         <scope>test</scope>
       </dependency>
     </dependencies>
@@ -477,7 +159,6 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-resources-plugin</artifactId>
-        <version>2.4.3</version>
         <configuration>
           <encoding>${project.build.sourceEncoding}</encoding>
         </configuration>
@@ -485,7 +166,6 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>2.3.1</version>
         <configuration>
           <source>1.5</source>
           <target>1.5</target>
@@ -495,7 +175,6 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
-        <version>2.1</version>
         <configuration>
           <templateFile>${basedir}/src/site/site.vm</templateFile>
         </configuration>
@@ -503,7 +182,6 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.5</version>
         <configuration>
           <includes>
             <include>**/*Test.java</include>
@@ -514,7 +192,6 @@
       <plugin>
         <groupId>com.atlassian.maven.plugins</groupId>
         <artifactId>maven-clover2-plugin</artifactId>
-        <version>3.0.2</version>
         <configuration>
           <licenseLocation>../clover.license</licenseLocation>
           <includesTestSourceRoots>false</includesTestSourceRoots>
@@ -532,7 +209,6 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
-        <version>2.1.2</version>
         <executions>
           <execution>
             <id>package-source</id>
@@ -603,7 +279,6 @@
               <goal>attached</goal>
             </goals>
             <configuration>
-              <!-- This is where we use our shared assembly descriptor -->
               <descriptors>
                 <descriptor>assembly.xml</descriptor>
               </descriptors>
@@ -630,18 +305,15 @@
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-site-plugin</artifactId>
         <version>2.1</version>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>javancss-maven-plugin</artifactId>
-        <version>2.0-beta-2</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>2.7</version>
         <configuration>
           <aggregate>true</aggregate>
           <minmemory>128m</minmemory>
@@ -654,7 +326,7 @@
           <links>
             <link>http://java.sun.com/j2se/1.5.0/docs/api/</link>
             <link>http://testng.org/javadocs</link>
-            <link>http://www.junit.org/junit/javadoc/4.3</link>
+            <link>http://kentbeck.github.com/junit/javadoc/latest/</link>
           </links>
         </configuration>
         <reportSets>
@@ -672,17 +344,14 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>findbugs-maven-plugin</artifactId>
-        <version>2.0</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-report-plugin</artifactId>
-        <version>2.5</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-changes-plugin</artifactId>
-        <version>2.3</version>
         <configuration>
           <xmlPath>${basedir}/src/site/changes.xml</xmlPath>
           <issueLinkTemplate>
@@ -703,7 +372,6 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>2.2</version>
         <reportSets>
           <reportSet>
             <reports>
