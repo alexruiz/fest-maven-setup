@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.easytesting</groupId>
   <artifactId>fest</artifactId>
-  <version>1.0.4</version>
+  <version>1.0.5</version>
   <packaging>pom</packaging>
   <name>FEST: Fixtures for Easy Software Testing</name>
   <licenses>
@@ -193,13 +193,13 @@
         <groupId>com.atlassian.maven.plugins</groupId>
         <artifactId>maven-clover2-plugin</artifactId>
         <configuration>
-          <licenseLocation>../clover.license</licenseLocation>
+          <licenseLocation>clover.license</licenseLocation>
           <includesTestSourceRoots>false</includesTestSourceRoots>
           <jdk>1.5</jdk>
         </configuration>
         <executions>
           <execution>
-            <phase>pre-site</phase>
+            <phase>generate-sources</phase>
             <goals>
               <goal>instrument</goal>
             </goals>
@@ -294,7 +294,7 @@
         <groupId>com.atlassian.maven.plugins</groupId>
         <artifactId>maven-clover2-plugin</artifactId>
         <configuration>
-          <licenseLocation>../clover.license</licenseLocation>
+          <licenseLocation>clover.license</licenseLocation>
           <includesTestSourceRoots>false</includesTestSourceRoots>
           <methodContexts>
            <private-constructor-noparam-nothrows>(.* )?private +[a-zA-Z0-9_$]+ *\( *\).*</private-constructor-noparam-nothrows>
