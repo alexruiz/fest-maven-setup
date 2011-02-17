@@ -5,9 +5,11 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.easytesting</groupId>
   <artifactId>fest</artifactId>
-  <version>1.0.5</version>
+  <version>1.0.8</version>
   <packaging>pom</packaging>
   <name>FEST: Fixtures for Easy Software Testing</name>
+  <description>Parent POM for all FEST Modules</description>
+  <url>http://fest.easytesting.org</url>
   <licenses>
     <license>
       <name>Apache License, Version 2.0</name>
@@ -19,18 +21,11 @@
     <name>FEST (Fixtures for Easy Software Testing)</name>
     <url>http://fest.easytesting.org</url>
   </organization>
-  <distributionManagement>
-    <repository>
-      <id>codehaus</id>
-      <name>CodeHaus Maven Repository</name>
-      <url>dav:https://dav.codehaus.org/repository/fest/</url>
-    </repository>
-    <snapshotRepository>
-      <id>codehaus.snapshot</id>
-      <name>CodeHaus Maven Snapshot Repository</name>
-      <url>dav:https://dav.codehaus.org/snapshots.repository/fest/</url>
-    </snapshotRepository>
-  </distributionManagement>
+  <scm>
+    <developerConnection>scm:git:git@github.com:alexruiz/fest-maven-setup.git</developerConnection>
+    <connection>git://github.com/alexruiz/fest-maven-setup.git</connection>
+    <url>https://github.com/alexruiz/fest-maven-setup</url>
+  </scm>
   <developers>
     <developer>
       <id>alexruiz</id>
@@ -211,15 +206,19 @@
         <artifactId>maven-source-plugin</artifactId>
         <executions>
           <execution>
-            <id>package-source</id>
-            <phase>package</phase>
+            <id>attach-sources</id>
             <goals>
               <goal>jar</goal>
             </goals>
           </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <executions>
           <execution>
-            <id>attach-sources</id>
-            <phase>verify</phase>
+            <id>attach-javadocs</id>
             <goals>
               <goal>jar</goal>
             </goals>
@@ -348,26 +347,6 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-report-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-changes-plugin</artifactId>
-        <configuration>
-          <xmlPath>${basedir}/src/site/changes.xml</xmlPath>
-          <issueLinkTemplate>
-            <!--
-            http://code.google.com/p/fest/issues/detail?id=%ISSUE%
-            -->
-            http://jira.codehaus.org/browse/%ISSUE%
-          </issueLinkTemplate>
-        </configuration>
-        <reportSets>
-          <reportSet>
-            <reports>
-              <report>changes-report</report>
-            </reports>
-          </reportSet>
-        </reportSets>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
