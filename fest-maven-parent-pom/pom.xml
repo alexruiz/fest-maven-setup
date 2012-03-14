@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd ">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd ">
 
   <modelVersion>4.0.0</modelVersion>
   <!-- using oss-parent to release on Sonatype OSS reposirories that are synced with maven central -->
@@ -11,7 +10,7 @@
   </parent>  
   <groupId>org.easytesting</groupId>
   <artifactId>fest</artifactId>
-  <version>1.0.9-SNAPSHOT</version>
+  <version>1.0.9</version>
   <packaging>pom</packaging>
   <name>FEST: Fixtures for Easy Software Testing</name>
   <description>Parent POM for all FEST Modules</description>
@@ -83,7 +82,7 @@
       </roles>
     </developer>
     <developer>
-      <id>&#32;</id>
+      <id> </id>
       <name>Simeon Fitch</name>
       <url>http://www.mseedsoft.com/</url>
       <roles>
