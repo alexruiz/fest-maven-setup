@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd ">
-
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd ">
   <modelVersion>4.0.0</modelVersion>
   <!-- using oss-parent to release on Sonatype OSS reposirories that are synced with maven central -->
   <parent>
     <groupId>org.sonatype.oss</groupId>
     <artifactId>oss-parent</artifactId>
     <version>7</version>
-  </parent>  
+  </parent>
   <groupId>org.easytesting</groupId>
   <artifactId>fest</artifactId>
   <version>1.0.15-SNAPSHOT</version>
@@ -31,6 +31,10 @@
     <connection>git://github.com/alexruiz/fest-maven-setup.git</connection>
     <url>https://github.com/alexruiz/fest-maven-setup</url>
   </scm>
+  <issueManagement>
+    <system>github</system>
+    <url>https://github.com/alexruiz/fest-maven-setup/issues</url>
+  </issueManagement>
   <developers>
     <developer>
       <id>alexruiz</id>
@@ -52,47 +56,8 @@
       </roles>
     </developer>
     <developer>
-      <id>steveonjava</id>
-      <name>Stephen Chin</name>
-      <url>http://steveonjava.com/</url>
-      <roles>
-        <role>Developer</role>
-      </roles>
-    </developer>
-    <developer>
       <id>joel</id>
       <name>Joel Costigliola</name>
-      <roles>
-        <role>Developer</role>
-      </roles>
-    </developer>
-    <developer>
-      <id>csaba.juhos</id>
-      <name>Juhos Csaba-Zsolt</name>
-      <roles>
-        <role>Developer</role>
-      </roles>
-    </developer>
-    <developer>
-      <id>szczepiq</id>
-      <name>Szczepan Faber</name>
-      <url>http://monkeyisland.pl/</url>
-      <roles>
-        <role>Developer</role>
-      </roles>
-    </developer>
-    <developer>
-      <id> </id>
-      <name>Simeon Fitch</name>
-      <url>http://www.mseedsoft.com/</url>
-      <roles>
-        <role>Developer</role>
-      </roles>
-    </developer>
-    <developer>
-      <id>michaelhuettermann</id>
-      <name>Michael Huttermann</name>
-      <url>http://michaelhuettermann.blogspot.com/</url>
       <roles>
         <role>Developer</role>
       </roles>
@@ -105,50 +70,10 @@
         <role>Developer</role>
       </roles>
     </developer>
-    <developer>
-      <id>mel.llaguno</id>
-      <name>Mel Llaguno</name>
-      <roles>
-        <role>Developer</role>
-      </roles>
-    </developer>
-    <developer>
-      <id>plm31</id>
-      <name>Peter Murray</name>
-      <roles>
-        <role>Developer</role>
-      </roles>
-    </developer>
-    <developer>
-      <id>rrakic</id>
-      <name>Remy Rakic</name>
-      <url>http://twitter.com/lqd</url>
-      <roles>
-        <role>Developer</role>
-      </roles>
-    </developer>
-    <developer>
-      <id>cedarsoft</id>
-      <name>Johannes Schneider</name>
-      <url>http://blog.cedarsoft.com/</url>
-      <roles>
-        <role>Developer</role>
-      </roles>
-    </developer>
-    <developer>
-      <id>tedyoung</id>
-      <name>Ted Young</name>
-      <url>http://tedyoung.blogsome.com/</url>
-      <roles>
-        <role>Developer</role>
-      </roles>
-    </developer>
   </developers>
-
   <prerequisites>
     <maven>2.2.1</maven>
   </prerequisites>
-
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -159,36 +84,35 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-   <profiles>
-     <profile>
-       <id>release-sign-artifacts</id>
-       <activation>
-         <property>
-           <name>performRelease</name>
-           <value>true</value>
-         </property>
-       </activation>
-       <build>
-         <plugins>
-           <plugin>
-             <groupId>org.apache.maven.plugins</groupId>
-             <artifactId>maven-gpg-plugin</artifactId>
-             <version>1.4</version>
-             <executions>
-               <execution>
-                 <id>sign-artifacts</id>
-                 <phase>verify</phase>
-                 <goals>
-                   <goal>sign</goal>
-                 </goals>
-               </execution>
-             </executions>
-           </plugin>
-         </plugins>
-       </build>
-     </profile>
-   </profiles>
-  
+  <profiles>
+    <profile>
+      <id>release-sign-artifacts</id>
+      <activation>
+        <property>
+          <name>performRelease</name>
+          <value>true</value>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>1.4</version>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
   <build>
     <plugins>
       <plugin>
@@ -219,12 +143,11 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>2.5.1</version>
         <configuration>
-          <source>1.5</source>
-          <target>1.5</target>
+          <source>1.6</source>
+          <target>1.6</target>
           <encoding>${project.build.sourceEncoding}</encoding>
         </configuration>
       </plugin>
-      <!-- animal-sniffer checks that project uses only java 5 API -->
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>animal-sniffer-maven-plugin</artifactId>
@@ -232,27 +155,19 @@
         <configuration>
           <signature>
             <groupId>org.codehaus.mojo.signature</groupId>
-            <artifactId>java15</artifactId>
+            <artifactId>java16</artifactId>
             <version>1.0</version>
           </signature>
         </configuration>
         <executions>
           <execution>
-            <id>Check jre 1.5 API compatibility</id>
+            <id>Check jre 1.6 API compatibility</id>
             <phase>test</phase>
             <goals>
-               <goal>check</goal>
+              <goal>check</goal>
             </goals>
           </execution>
         </executions>
-      </plugin>      
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-site-plugin</artifactId>
-        <version>3.1</version>
-        <configuration>
-          <templateFile>${basedir}/src/site/site.vm</templateFile>
-        </configuration>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -278,84 +193,6 @@
           </execution>
         </executions>
       </plugin>
-      <!--  mvn install fails because of javadoc jar generation hangs up forever. as we already attach sources, 
-      it seems redundant to attach javadoc since any modern IDE is able to display javadoc from sources.
-      -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <version>2.8.1</version>
-        <executions>
-          <execution>
-            <id>attach-javadocs</id>
-            <goals>
-              <goal>jar</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-dependency-plugin</artifactId>
-        <version>2.4</version>
-        <executions>
-          <execution>
-            <id>copy-dependencies</id>
-            <phase>package</phase>
-            <goals>
-              <goal>copy-dependencies</goal>
-            </goals>
-            <configuration>
-              <outputDirectory>${project.build.directory}/lib</outputDirectory>
-              <includeScope>runtime</includeScope>
-              <overWriteReleases>false</overWriteReleases>
-              <overWriteSnapshots>true</overWriteSnapshots>
-              <excludeTransitive>true</excludeTransitive>
-            </configuration>
-          </execution>
-          <execution>
-            <id>copy-dependencies-sources</id>
-            <phase>package</phase>
-            <goals>
-              <goal>copy-dependencies</goal>
-            </goals>
-            <configuration>
-              <outputDirectory>${project.build.directory}/lib</outputDirectory>
-              <classifier>sources</classifier>
-              <includeScope>runtime</includeScope>
-              <failOnMissingClassifierArtifact>false</failOnMissingClassifierArtifact>
-              <overWriteReleases>false</overWriteReleases>
-              <overWriteSnapshots>true</overWriteSnapshots>
-              <excludeTransitive>true</excludeTransitive>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <artifactId>maven-assembly-plugin</artifactId>
-        <!-- specifying the version makes the build fail !?! really weird -->
-        <dependencies>
-          <dependency>
-            <groupId>org.easytesting</groupId>
-            <artifactId>fest-assembly</artifactId>
-            <version>1.0</version>
-          </dependency>
-        </dependencies>
-        <executions>
-          <execution>
-            <id>make-assembly</id>
-            <phase>package</phase>
-            <goals>
-              <goal>single</goal>
-            </goals>
-            <configuration>
-              <descriptors>
-                <descriptor>assembly.xml</descriptor>
-              </descriptors>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
     </plugins>
   </build>
   <reporting>
@@ -363,41 +200,12 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
-        <version>3.1</version>        
+        <version>3.1</version>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>javancss-maven-plugin</artifactId>
-        <version>2.0</version>        
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <version>2.8.1</version>        
-        <configuration>
-           <!-- commented because deprecated
-          <aggregate>true</aggregate>
-           -->
-          <minmemory>128m</minmemory>
-          <maxmemory>512m</maxmemory>
-          <breakiterator>true</breakiterator>
-          <quiet>true</quiet>
-          <source>1.5</source>
-          <verbose>false</verbose>
-          <linksource>true</linksource>
-          <links>
-            <link>http://java.sun.com/j2se/1.5.0/docs/api/</link>
-            <link>http://testng.org/javadocs</link>
-            <link>http://kentbeck.github.com/junit/javadoc/latest/</link>
-          </links>
-        </configuration>
-        <reportSets>
-          <reportSet>
-            <reports>
-              <report>javadoc</report>
-            </reports>
-          </reportSet>
-        </reportSets>
+        <version>2.0</version>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
